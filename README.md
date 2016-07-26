@@ -9,17 +9,17 @@ Das Programm läuft als deamon und schaut an definierten Orten nach Änderungen.
 Sobald sich etwas geändert hat wird die Datei anhand der Definierten regeln verarbeitet.
 
 ## Regeln
-Dateiname durch Regex
-Dateiendung (Filetype)
-Zeitstempel
-Größe
-ID3 Tags
-Video Formats (use ffmpeg)
+* Dateiname durch Regex
+* Dateiendung (Filetype)
+* Zeitstempel
+* Größe
+* ID3 Tags
+* Video Formats (use ffmpeg)
 
 ## Actionen
-Move
-Delete
-Unzip
-Copy
-Sync
-Rename
+* Move
+* Delete
+* Unzip
+* Copy
+* Sync
+* Rename
