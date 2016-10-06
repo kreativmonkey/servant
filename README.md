@@ -23,3 +23,34 @@ Sobald sich etwas geändert hat wird die Datei anhand der Definierten regeln ver
 * Copy
 * Sync
 * Rename
+
+## Funktionen
+* watche() - Überwachung von Dateien/Ordner
+
+### Setup
+
+Rules.conf
+```json
+{
+movepdf: {
+  filetype: pdf
+  action: move
+  target: /path/to/pdf/folder
+  }
+music: {
+  filetype: mp3,aac
+  action: move
+  option: id3 
+  taget: /path/to/mp3/artist/album/title-artist.filetype
+  }
+}
+```
+Config.conf
+```json
+{
+download: {
+  watch: /path/to/folder
+  rules: movepdf,music
+  }
+}
+```
